@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif; }
+
+.header__title {
+  text-align: center; }
+  .header__title span {
+    color: blue; }
+
+.header__small {
+  text-align: center;
+  font-size: 1.1rem; }

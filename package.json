@@ -1,0 +1,13 @@
+{
+  "name": "acme-safari",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Brian Sekwakwa",
+  "license": "MIT",
+  "scripts": {
+    "sass": "node-sass -w scss -o docs/css --recursive"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
