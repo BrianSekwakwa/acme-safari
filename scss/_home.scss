@@ -1,0 +1,77 @@
+//how many images we have
+$slides: 4;
+
+// how much we want each slide to show
+$time_per_slide: 4;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+.home {
+  margin-top: 2rem;
+
+  &__slider {
+    width: 100%;
+    height: 36rem;
+    overflow: hidden;
+    position: relative;
+    background: red;
+
+    &__photo {
+      position: absolute;
+      animation: round #{$total_animation_time}s infinite;
+      opacity: 0;
+    }
+  }
+
+  &__offer {
+    &__header {
+      max-width: 37.5rem;
+      margin: 3rem auto 0 auto;
+      padding: 0 0.5rem;
+      text-align: center;
+
+      & p {
+        margin-top: 1rem;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      padding: 0 0.5rem;
+      margin-top: 3rem;
+      background: red;
+
+      @include small {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 65rem;
+        grid-gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__card-item {
+        display: grid;
+
+        @include small {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@for $index from 1 to $slides + 1 {
+  img:nth-child(#{$index}) {
+    animation-delay: #{$total_animation_time - $time_per_slide * $index}s;
+  }
+}
