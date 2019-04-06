@@ -35,14 +35,13 @@ $total_animation_time: $time_per_slide * $slides;
         margin-top: 1rem;
       }
     }
-
+    // cards of safari offers
     &__cards {
       display: grid;
-      padding: 0 0.5rem;
+      padding: 0.5rem;
       margin-top: 3rem;
-      background: red;
 
-      @include small {
+      @include medium {
         grid-template-columns: repeat(2, 1fr);
         max-width: 65rem;
         grid-gap: 2rem;
@@ -52,9 +51,33 @@ $total_animation_time: $time_per_slide * $slides;
 
       &__card-item {
         display: grid;
+        grid-gap: 1rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-out;
+        min-height: 20rem;
 
-        @include small {
-          grid-template-columns: repeat(2, 1fr);
+        &:hover {
+          box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.5);
+          transform: translateY(-10px);
+        }
+
+        & img {
+          width: 100%;
+          height: 100%;
+
+          @include verySmall {
+            min-height: 15rem;
+          }
+        }
+
+        & h4 {
+          font-size: 1.5rem;
+        }
+
+        @include medium {
+          grid-template-columns: 1.5fr 1fr;
         }
       }
     }

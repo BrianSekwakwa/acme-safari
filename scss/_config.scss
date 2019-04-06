@@ -5,6 +5,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
+  z-index: -1;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("http://farm9.staticflickr.com/8241/8562523343_9bb49b7b7b.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// restricting widths on larger screens
+header,
+main,
+footer {
+  max-width: 85.375rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Media Query Mixins
