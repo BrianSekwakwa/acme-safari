@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>ACME SAFARI</title>
   </head>
   <body>
@@ -237,13 +243,25 @@
       <!-- Contact form page -->
       <section class="contact">
         <h1>Contact Us!</h1>
-        <p>Send us a message if you want to get more information.</p>
-        <form action="">
-          <input type="text" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
-          <textarea placeholder="Write us your message :)" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <div class="contact__spinner">
+          <img src="./img/spinner.gif" alt="spinner animation" />
+        </div>
+        <div class="contact__message">
+          <span>Message Sent</span>
+          <i class="far fa-check-circle"></i>
+        </div>
+        <div class="contact__form">
+          <p>Send us a message if you want to get more information.</p>
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter Your Email" required />
+            <textarea
+              placeholder="Write us your message :)"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
 
