@@ -3,8 +3,10 @@ const form = document.querySelector(".contact__form form");
 const contactForm = document.querySelector(".contact__form");
 const spinner = document.querySelector(".contact__spinner");
 const message = document.querySelector(".contact__message");
-// const modalContent = document.querySelector(".modal__content");
-// const image1 = document.querySelector("#image01");
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal__content");
+const modalCloseButton = document.querySelector(".modal__box__close");
+const image1 = document.querySelector("#image01");
 // const image2 = document.querySelector("#image02");
 // const image3 = document.querySelector("#image03");
 // const image4 = document.querySelector("#image04");
@@ -73,3 +75,19 @@ function load(e) {
 //     modalContent.innerHTML = "<h1>Number One</h1>";
 //   }
 // }
+
+// Opening Modal
+
+image1.addEventListener("click", openModal);
+
+function openModal(e) {
+  console.log("step");
+  modal.classList.add("showModal");
+}
+
+// Close Modal
+modalCloseButton.addEventListener("click", closeModal);
+
+function closeModal(e) {
+  modal.classList.remove("showModal");
+}
