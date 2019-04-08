@@ -8,8 +8,9 @@ $time_per_slide: 4;
 $total_animation_time: $time_per_slide * $slides;
 
 .home {
-  margin-top: 2rem;
-
+  @include small {
+    margin-top: 1.5rem;
+  }
   &__slider {
     width: 100%;
     height: 36rem;
