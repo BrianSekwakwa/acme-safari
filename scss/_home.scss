@@ -19,6 +19,8 @@ $total_animation_time: $time_per_slide * $slides;
     background: red;
 
     &__photo {
+      width: 100%;
+      height: 100%;
       position: absolute;
       animation: round #{$total_animation_time}s infinite;
       opacity: 0;
@@ -70,6 +72,9 @@ $total_animation_time: $time_per_slide * $slides;
 
           @include verySmall {
             min-height: 15rem;
+          }
+          @include small {
+            min-height: 17rem;
           }
         }
 
