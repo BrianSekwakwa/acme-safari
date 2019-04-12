@@ -70,3 +70,19 @@ $(document).keyup(function(e) {
     modal.classList.remove("showModal");
   }
 });
+
+// Resizing Images
+
+window.addEventListener("resize", updateImage);
+
+function updateImage(e) {
+  if (window.innerWidth === 578) {
+    console.log("This is 578");
+  } else if (window.innerWidth === 768) {
+    console.log("this is 768");
+  } else if (window.innerWidth === 992) {
+    console.log("this is 992");
+  } else if (window.innerWidth === 1200) {
+    console.log("this is 1200");
+  }
+}

@@ -24,6 +24,11 @@ $total_animation_time: $time_per_slide * $slides;
       position: absolute;
       animation: round #{$total_animation_time}s infinite;
       opacity: 0;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -100,7 +105,7 @@ $total_animation_time: $time_per_slide * $slides;
 }
 
 @for $index from 1 to $slides + 1 {
-  img:nth-child(#{$index}) {
+  div:nth-child(#{$index}) {
     animation-delay: #{$total_animation_time - $time_per_slide * $index}s;
   }
 }
