@@ -71,9 +71,11 @@ $total_animation_time: $time_per_slide * $slides;
           transform: translateY(-10px);
         }
 
-        & img {
-          width: 100%;
-          height: 100%;
+        & picture {
+          & img {
+            width: 100%;
+            height: 100%;
+          }
 
           @include verySmall {
             min-height: 15rem;

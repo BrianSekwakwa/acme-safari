@@ -7,10 +7,8 @@
   font-family: "PT Sans", sans-serif;
 }
 
-// restricting widths on larger screens
-header,
-main,
-footer {
+.container {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   max-width: 85.375rem;
   margin-left: auto;
   margin-right: auto;
@@ -49,6 +47,13 @@ footer {
 // Extra large devices (large desktops, 1200px and up)
 @mixin veryLarge {
   @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Wide Desktop Screens (1366px and up)
+@mixin wideScreens {
+  @media screen and (min-width: 1921px) {
     @content;
   }
 }

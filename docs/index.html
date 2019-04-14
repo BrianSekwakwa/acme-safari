@@ -14,376 +14,411 @@
     <title>ACME SAFARI</title>
   </head>
   <body>
-    <!-- Nagivation -->
-    <header>
-      <h1>ACME SAFARI</h1>
-      <p>South Africa's Most Popular Safari Experience</p>
-    </header>
-    <nav>
-      <ul>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Gallery</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-      <div class="handle">
-        <p class="menu">Menu</p>
-        <div class="menu_icon">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </nav>
-
-    <main>
-      <section class="home">
-        <!-- RESPONSIVE HOME SLIDER IMAGES -->
-        <div class="home__slider">
-          <!-- Home Image 1 -->
-          <div class="home__slider__photo" id="photo1">
-            <picture>
-              <source
-                srcset="img/header/header01--1320.jpg"
-                media="(min-width: 1320px)"
-              />
-              <source
-                srcset="img/header/header01--1200.jpg"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="img/header/header01--1080.jpg"
-                media="(min-width: 1080px)"
-              />
-              <source
-                srcset="img/header/header01--960.jpg"
-                media="(min-width: 960px)"
-              />
-              <source
-                srcset="img/header/header01--840.jpg"
-                media="(min-width: 840px)"
-              />
-              <source
-                srcset="img/header/header01--720.jpg"
-                media="(min-width: 720px)"
-              />
-              <source
-                srcset="img/header/header01--600.jpg"
-                media="(min-width: 600px)"
-              />
-              <source
-                srcset="img/header/header01--480.jpg"
-                media="(min-width: 480px)"
-              />
-              <img src="img/header/header01--360.jpg" alt="Nature Photo" />
-            </picture>
-          </div>
-          <!-- Home Image 2 -->
-          <div class="home__slider__photo" id="photo2">
-            <picture>
-              <source
-                srcset="img/header/header02--1320.jpg"
-                media="(min-width: 1320px)"
-              />
-              <source
-                srcset="img/header/header02--1200.jpg"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="img/header/header02--1080.jpg"
-                media="(min-width: 1080px)"
-              />
-              <source
-                srcset="img/header/header02--960.jpg"
-                media="(min-width: 960px)"
-              />
-              <source
-                srcset="img/header/header02--840.jpg"
-                media="(min-width: 840px)"
-              />
-              <source
-                srcset="img/header/header02--720.jpg"
-                media="(min-width: 720px)"
-              />
-              <source
-                srcset="img/header/header02--600.jpg"
-                media="(min-width: 600px)"
-              />
-              <source
-                srcset="img/header/header02--480.jpg"
-                media="(min-width: 480px)"
-              />
-              <img src="img/header/header02--360.jpg" alt="Nature Photo" />
-            </picture>
-          </div>
-          <!-- Home Image 3 -->
-          <div class="home__slider__photo" id="photo3">
-            <picture>
-              <source
-                srcset="img/header/header03--1320.jpg"
-                media="(min-width: 1320px)"
-              />
-              <source
-                srcset="img/header/header03--1200.jpg"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="img/header/header03--1080.jpg"
-                media="(min-width: 1080px)"
-              />
-              <source
-                srcset="img/header/header03--960.jpg"
-                media="(min-width: 960px)"
-              />
-              <source
-                srcset="img/header/header03--840.jpg"
-                media="(min-width: 840px)"
-              />
-              <source
-                srcset="img/header/header03--720.jpg"
-                media="(min-width: 720px)"
-              />
-              <source
-                srcset="img/header/header03--600.jpg"
-                media="(min-width: 600px)"
-              />
-              <source
-                srcset="img/header/header03--480.jpg"
-                media="(min-width: 480px)"
-              />
-              <img src="img/header/header03--360.jpg" alt="Nature Photo" />
-            </picture>
-          </div>
-          <!-- Home Image 4 -->
-          <div class="home__slider__photo" id="photo4">
-            <picture>
-              <source
-                srcset="img/header/header04--1320.jpg"
-                media="(min-width: 1320px)"
-              />
-              <source
-                srcset="img/header/header04--1200.jpg"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="img/header/header04--1080.jpg"
-                media="(min-width: 1080px)"
-              />
-              <source
-                srcset="img/header/header04--960.jpg"
-                media="(min-width: 960px)"
-              />
-              <source
-                srcset="img/header/header04--840.jpg"
-                media="(min-width: 840px)"
-              />
-              <source
-                srcset="img/header/header04--720.jpg"
-                media="(min-width: 720px)"
-              />
-              <source
-                srcset="img/header/header04--600.jpg"
-                media="(min-width: 600px)"
-              />
-              <source
-                srcset="img/header/header04--480.jpg"
-                media="(min-width: 480px)"
-              />
-              <img src="img/header/header04--360.jpg" alt="Nature Photo" />
-            </picture>
+    <div class="container">
+      <!-- Nagivation -->
+      <header id="home">
+        <h1>ACME SAFARI</h1>
+        <p>South Africa's Most Popular Safari Experience</p>
+      </header>
+      <nav>
+        <ul>
+          <a href="#safari"><li>Safari</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#gallery"><li>Gallery</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+        <div class="handle">
+          <p class="menu">Menu</p>
+          <div class="menu_icon">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
+      </nav>
 
-        <!-- Offer section on the home page -->
-        <div class="home__offer">
-          <!-- home-header -->
-          <div class="home__offer__header">
-            <h2>
-              ACME SAFARI – is a nature reserve company, specializing in
-              combining your dream African nature tour experience with world
-              class tour guides.
-            </h2>
-            <p>
-              We offer luxury accommodation at the most distinguished Lodges in
-              Africa, paired with musical entertainment from some of the world’s
-              top professional musicians. Our lodges are selected with privacy,
-              luxury, relaxation and pristine scenic beauty in mind, and our
-              tour guides are hand picked, based on their extensive careers as
-              professionals with the knowledge to give you everything you need
-              to know about the Safari.
-            </p>
-          </div>
-          <!-- home-offer -->
-          <div class="home__offer__cards">
-            <div class="home__offer__cards__card-item">
-              <img src="./img/offers/offer01.jpg" alt="" />
-              <div>
-                <h4>Beuatiful Scenery</h4>
-                <p>
-                  Experience the beautiful lands within the safari and enjoy
-                  because around the best that nature has to offer.
-                </p>
-              </div>
+      <main>
+        <section class="home">
+          <!-- RESPONSIVE HOME SLIDER IMAGES -->
+          <div class="home__slider">
+            <!-- Home Image 1 -->
+            <div class="home__slider__photo" id="photo1">
+              <picture>
+                <source
+                  srcset="img/header/header01--1320.jpg"
+                  media="(min-width: 1320px)"
+                />
+                <source
+                  srcset="img/header/header01--1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="img/header/header01--1080.jpg"
+                  media="(min-width: 1080px)"
+                />
+                <source
+                  srcset="img/header/header01--960.jpg"
+                  media="(min-width: 960px)"
+                />
+                <source
+                  srcset="img/header/header01--840.jpg"
+                  media="(min-width: 840px)"
+                />
+                <source
+                  srcset="img/header/header01--720.jpg"
+                  media="(min-width: 720px)"
+                />
+                <source
+                  srcset="img/header/header01--600.jpg"
+                  media="(min-width: 600px)"
+                />
+                <source
+                  srcset="img/header/header01--480.jpg"
+                  media="(min-width: 480px)"
+                />
+                <img src="img/header/header01--360.jpg" alt="Nature Photo" />
+              </picture>
             </div>
-            <div class="home__offer__cards__card-item">
-              <img src="./img/offers/offer02.jpg" alt="" />
-              <div>
-                <h4>Musical Entertainment</h4>
-                <p>
-                  On this journey you will experience a wide range of musical
-                  talent from world class musicians all over the world and you
-                  will also get exposed to young African talent.
-                </p>
-              </div>
+            <!-- Home Image 2 -->
+            <div class="home__slider__photo" id="photo2">
+              <picture>
+                <source
+                  srcset="img/header/header02--1320.jpg"
+                  media="(min-width: 1320px)"
+                />
+                <source
+                  srcset="img/header/header02--1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="img/header/header02--1080.jpg"
+                  media="(min-width: 1080px)"
+                />
+                <source
+                  srcset="img/header/header02--960.jpg"
+                  media="(min-width: 960px)"
+                />
+                <source
+                  srcset="img/header/header02--840.jpg"
+                  media="(min-width: 840px)"
+                />
+                <source
+                  srcset="img/header/header02--720.jpg"
+                  media="(min-width: 720px)"
+                />
+                <source
+                  srcset="img/header/header02--600.jpg"
+                  media="(min-width: 600px)"
+                />
+                <source
+                  srcset="img/header/header02--480.jpg"
+                  media="(min-width: 480px)"
+                />
+                <img src="img/header/header02--360.jpg" alt="Nature Photo" />
+              </picture>
             </div>
-            <div class="home__offer__cards__card-item">
-              <img src="./img/offers/offer03.jpg" alt="" />
-              <div>
-                <h4>World Class Tour Guides</h4>
-                <p>
-                  Have no fear when you are travelling with our extensively
-                  experienced tour guides that are going to show you around the
-                  Safari.
-                </p>
-              </div>
+            <!-- Home Image 3 -->
+            <div class="home__slider__photo" id="photo3">
+              <picture>
+                <source
+                  srcset="img/header/header03--1320.jpg"
+                  media="(min-width: 1320px)"
+                />
+                <source
+                  srcset="img/header/header03--1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="img/header/header03--1080.jpg"
+                  media="(min-width: 1080px)"
+                />
+                <source
+                  srcset="img/header/header03--960.jpg"
+                  media="(min-width: 960px)"
+                />
+                <source
+                  srcset="img/header/header03--840.jpg"
+                  media="(min-width: 840px)"
+                />
+                <source
+                  srcset="img/header/header03--720.jpg"
+                  media="(min-width: 720px)"
+                />
+                <source
+                  srcset="img/header/header03--600.jpg"
+                  media="(min-width: 600px)"
+                />
+                <source
+                  srcset="img/header/header03--480.jpg"
+                  media="(min-width: 480px)"
+                />
+                <img src="img/header/header03--360.jpg" alt="Nature Photo" />
+              </picture>
             </div>
-            <div class="home__offer__cards__card-item">
-              <img src="./img/offers/offer04.jpg" alt="" />
-              <div>
-                <h4>Beautiful Lodges</h4>
-                <p>
-                  Sleep in a nice comfortable bed surrounded by the sounds of
-                  nature and away from city noises where you can be in peace and
-                  harmony.
-                </p>
-              </div>
+            <!-- Home Image 4 -->
+            <div class="home__slider__photo" id="photo4">
+              <picture>
+                <source
+                  srcset="img/header/header04--1320.jpg"
+                  media="(min-width: 1320px)"
+                />
+                <source
+                  srcset="img/header/header04--1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="img/header/header04--1080.jpg"
+                  media="(min-width: 1080px)"
+                />
+                <source
+                  srcset="img/header/header04--960.jpg"
+                  media="(min-width: 960px)"
+                />
+                <source
+                  srcset="img/header/header04--840.jpg"
+                  media="(min-width: 840px)"
+                />
+                <source
+                  srcset="img/header/header04--720.jpg"
+                  media="(min-width: 720px)"
+                />
+                <source
+                  srcset="img/header/header04--600.jpg"
+                  media="(min-width: 600px)"
+                />
+                <source
+                  srcset="img/header/header04--480.jpg"
+                  media="(min-width: 480px)"
+                />
+                <img src="img/header/header04--360.jpg" alt="Nature Photo" />
+              </picture>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- About the ACME Reserve website -->
-      <section class="about">
-        <div class="about__image parallax">
-          <div class="about__image__text">
-            <h1>
-              About Us
-            </h1>
-          </div>
-        </div>
-        <div class="about__text">
-          <div class="about__text__left">
-            <h2>What We Are All About</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-              accusamus dicta at? Hic fuga quisquam totam facere inventore porro
-              maxime fugiat eos in? Quidem rem nulla cumque culpa labore quos
-              debitis dolorum exercitationem doloremque magnam a molestiae,
-              tempora, assumenda ratione. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Hic accusamus dicta at? Hic fuga
-              quisquam totam facere inventore porro maxime fugiat eos in? Quidem
-              rem nulla cumque culpa labore quos debitis dolorum exercitationem
-              doloremque magnam a molestiae, tempora, assumenda ratione. Lorem
-              ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              incidunt doloremque ipsam, pariatur exercitationem hic veniam
-              voluptas commodi quidem
-            </p>
-          </div>
-          <div class="about__text__right">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Recusandae incidunt doloremque ipsam, pariatur exercitationem hic
-              veniam voluptas commodi quidem reiciendis iste perspiciatis
-              quisquam impedit possimus tempora, non nulla voluptate? Aspernatur
-              nobis veritatis odit sit animi qui at repellat, assumenda
-              voluptatem iure molestiae impedit voluptatum excepturi eos aperiam
-              quibusdam vitae ipsam sapiente perspiciatis porro est numquam
-              possimus similique? Quia, maxime nisi. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Recusandae incidunt doloremque
-              ipsam, pariatur exercitationem hic veniam voluptas commodi quidem
-              reiciendis iste perspiciatis quisquam impedit possimus tempora,
-              non nulla voluptate? Aspernatur nobis veritatis odit sit animi qui
-              at repellat, assumenda voluptatem iure molestiae impedit
-              voluptatum excepturi eos aperiam quibusdam vitae ipsam sapiente
-              perspiciatis porro est numquam possimus similique? Quia, maxime
-              nisi.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Gallery of the nature reserve-->
-      <section class="gallery">
-        <div class="gallery__photos">
-          <div class="gallery__photos__images">
-            <a href="./img/gallery/gallery01--hd.jpg" target="_blank">
-              <img
-                src="./img/gallery/gallery01.jpg"
-                alt="Safari Animal Photo"
-              />
-            </a>
+          <!-- Offer section on the home page -->
+          <div class="home__offer" id="safari">
+            <!-- home-header -->
+            <div class="home__offer__header">
+              <h2>
+                ACME SAFARI – is a nature reserve company, specializing in
+                combining your dream African nature tour experience with world
+                class tour guides.
+              </h2>
+              <p>
+                We offer luxury accommodation at the most distinguished Lodges
+                in Africa, paired with musical entertainment from some of the
+                world’s top professional musicians. Our lodges are selected with
+                privacy, luxury, relaxation and pristine scenic beauty in mind,
+                and our tour guides are hand picked, based on their extensive
+                careers as professionals with the knowledge to give you
+                everything you need to know about the Safari.
+              </p>
+            </div>
+            <!-- home-offer -->
+            <div class="home__offer__cards">
+              <div class="home__offer__cards__card-item">
+                <picture>
+                  <source
+                    srcset="./img/offers/offer01--wide.jpg"
+                    media="(min-width:576px) and (max-width: 768px)"
+                  />
+                  <img src="./img/offers/offer01.jpg" alt="" />
+                </picture>
+                <div>
+                  <h4>Beuatiful Scenery</h4>
+                  <p>
+                    Experience the beautiful lands within the safari and enjoy
+                    because around the best that nature has to offer.
+                  </p>
+                </div>
+              </div>
+              <div class="home__offer__cards__card-item">
+                <picture>
+                  <source
+                    srcset="./img/offers/offer02--wide.jpg"
+                    media="(min-width:576px) and (max-width: 768px)"
+                  />
+                  <img src="./img/offers/offer02.jpg" alt="" />
+                </picture>
+                <div>
+                  <h4>Musical Entertainment</h4>
+                  <p>
+                    On this journey you will experience a wide range of musical
+                    talent from world class musicians all over the world and you
+                    will also get exposed to young African talent.
+                  </p>
+                </div>
+              </div>
+              <div class="home__offer__cards__card-item">
+                <picture>
+                  <source
+                    srcset="./img/offers/offer03--wide.jpg"
+                    media="(min-width:576px) and (max-width: 768px)"
+                  />
+                  <img src="./img/offers/offer03.jpg" alt="" />
+                </picture>
+                <div>
+                  <h4>World Class Tour Guides</h4>
+                  <p>
+                    Have no fear when you are travelling with our extensively
+                    experienced tour guides that are going to show you around
+                    the Safari.
+                  </p>
+                </div>
+              </div>
+              <div class="home__offer__cards__card-item">
+                <picture>
+                  <source
+                    srcset="./img/offers/offer04--wide.jpg"
+                    media="(min-width:576px) and (max-width: 768px)"
+                  />
+                  <img src="./img/offers/offer04.jpg" alt="" />
+                </picture>
+                <div>
+                  <h4>Beautiful Lodges</h4>
+                  <p>
+                    Sleep in a nice comfortable bed surrounded by the sounds of
+                    nature and away from city noises where you can be in peace
+                    and harmony.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="gallery__photos__images">
-            <a href="./img/gallery/gallery02--hd.jpg" target="_blank">
-              <img
-                src="./img/gallery/gallery02.jpg"
-                alt="Safari Animal Photo"
-              />
-            </a>
+        </section>
+        <!-- About the ACME Reserve website -->
+        <section class="about" id="about">
+          <div class="about__image parallax">
+            <div class="about__image__text">
+              <h1>
+                About Us
+              </h1>
+            </div>
           </div>
-          <div class="gallery__photos__images">
-            <a href="./img/gallery/gallery03--hd.jpg" target="_blank">
-              <img
-                src="./img/gallery/gallery03.jpg"
-                alt="Safari Animal Photo"
-              />
-            </a>
+          <div class="about__text">
+            <div class="about__text__left">
+              <h2>What We Are All About</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+                accusamus dicta at? Hic fuga quisquam totam facere inventore
+                porro maxime fugiat eos in? Quidem rem nulla cumque culpa labore
+                quos debitis dolorum exercitationem doloremque magnam a
+                molestiae, tempora, assumenda ratione. Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Hic accusamus dicta at? Hic
+                fuga quisquam totam facere inventore porro maxime fugiat eos in?
+                Quidem rem nulla cumque culpa labore quos debitis dolorum
+                exercitationem doloremque magnam a molestiae, tempora, assumenda
+                ratione. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Recusandae incidunt doloremque ipsam, pariatur
+                exercitationem hic veniam voluptas commodi quidem
+              </p>
+            </div>
+            <div class="about__text__right">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae incidunt doloremque ipsam, pariatur exercitationem
+                hic veniam voluptas commodi quidem reiciendis iste perspiciatis
+                quisquam impedit possimus tempora, non nulla voluptate?
+                Aspernatur nobis veritatis odit sit animi qui at repellat,
+                assumenda voluptatem iure molestiae impedit voluptatum excepturi
+                eos aperiam quibusdam vitae ipsam sapiente perspiciatis porro
+                est numquam possimus similique? Quia, maxime nisi. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Recusandae
+                incidunt doloremque ipsam, pariatur exercitationem hic veniam
+                voluptas commodi quidem reiciendis iste perspiciatis quisquam
+                impedit possimus tempora, non nulla voluptate? Aspernatur nobis
+                veritatis odit sit animi qui at repellat, assumenda voluptatem
+                iure molestiae impedit voluptatum excepturi eos aperiam
+                quibusdam vitae ipsam sapiente perspiciatis porro est numquam
+                possimus similique? Quia, maxime nisi.
+              </p>
+            </div>
           </div>
-          <div class="gallery__photos__images">
-            <a href="./img/gallery/gallery04--hd.jpg" target="_blank">
-              <img
-                src="./img/gallery/gallery04.jpg"
-                alt="Safari Animal Photo"
-              />
-            </a>
+        </section>
+
+        <!-- Gallery of the nature reserve-->
+        <section class="gallery" id="gallery">
+          <div class="gallery__photos">
+            <div class="gallery__photos__images">
+              <a href="./img/gallery/gallery01--hd.jpg" target="_blank">
+                <img
+                  src="./img/gallery/gallery01.jpg"
+                  alt="Safari Animal Photo"
+                />
+              </a>
+            </div>
+            <div class="gallery__photos__images">
+              <a href="./img/gallery/gallery02--hd.jpg" target="_blank">
+                <img
+                  src="./img/gallery/gallery02.jpg"
+                  alt="Safari Animal Photo"
+                />
+              </a>
+            </div>
+            <div class="gallery__photos__images">
+              <a href="./img/gallery/gallery03--hd.jpg" target="_blank">
+                <img
+                  src="./img/gallery/gallery03.jpg"
+                  alt="Safari Animal Photo"
+                />
+              </a>
+            </div>
+            <div class="gallery__photos__images">
+              <a href="./img/gallery/gallery04--hd.jpg" target="_blank">
+                <img
+                  src="./img/gallery/gallery04.jpg"
+                  alt="Safari Animal Photo"
+                />
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="gallery__video">
-          <iframe src="" frameborder="0"></iframe>
-        </div>
-      </section>
+          <div class="gallery__video">
+            <iframe
+              src="https://www.youtube.com/embed/5O3Dx_uDvRU"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
 
-      <!-- Contact form page -->
-      <section class="contact">
-        <h1>Contact Us!</h1>
-        <div class="contact__spinner">
-          <img src="./img/spinner.gif" alt="spinner animation" />
-        </div>
-        <div class="contact__message">
-          <span>Message Sent</span>
-          <i class="far fa-check-circle"></i>
-        </div>
-        <div class="contact__form">
-          <p>Send us a message if you want to get more information.</p>
-          <form action="">
-            <input type="text" placeholder="Enter Your Name" required />
-            <input type="email" placeholder="Enter Your Email" required />
-            <textarea
-              placeholder="Write us your message :)"
-              required
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
+        <!-- Contact form page -->
+        <section class="contact" id="contact">
+          <h1>Contact Us!</h1>
+          <div class="contact__spinner">
+            <img src="./img/spinner.gif" alt="spinner animation" />
+          </div>
+          <div class="contact__message">
+            <span>Message Sent</span>
+            <i class="far fa-check-circle"></i>
+          </div>
+          <div class="contact__form">
+            <p>Send us a message if you want to get more information.</p>
+            <form action="">
+              <input type="text" placeholder="Enter Your Name" required />
+              <input type="email" placeholder="Enter Your Email" required />
+              <textarea
+                placeholder="Write us your message :)"
+                required
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </main>
 
-    <!-- Footer section -->
-    <footer class="footer">
-      <p>&copy; Acme Reserve</p>
-    </footer>
+      <!-- Footer section -->
+      <footer class="footer">
+        <p>&copy; Acme Reserve</p>
+      </footer>
 
-    <!-- Window Border -->
-
+      <!-- To The Top Button -->
+      <a href="#home">
+        <div class="top-button">
+          ^
+        </div>
+      </a>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

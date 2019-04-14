@@ -5,9 +5,8 @@
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif; }
 
-header,
-main,
-footer {
+.container {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   max-width: 85.375rem;
   margin-left: auto;
   margin-right: auto; }
@@ -147,15 +146,15 @@ p.menu {
     .home__offer__cards__card-item:hover {
       box-shadow: 0px 8px 10px 5px rgba(0, 0, 0, 0.5);
       transform: translateY(-10px); }
-    .home__offer__cards__card-item img {
+    .home__offer__cards__card-item picture img {
       width: 100%;
       height: 100%; }
-      @media screen and (max-width: 575.98px) {
-        .home__offer__cards__card-item img {
-          min-height: 15rem; } }
-      @media screen and (min-width: 576px) {
-        .home__offer__cards__card-item img {
-          min-height: 17rem; } }
+    @media screen and (max-width: 575.98px) {
+      .home__offer__cards__card-item picture {
+        min-height: 15rem; } }
+    @media screen and (min-width: 576px) {
+      .home__offer__cards__card-item picture {
+        min-height: 17rem; } }
     .home__offer__cards__card-item h4 {
       font-size: 1.5rem; }
     @media screen and (min-width: 768px) {
@@ -244,7 +243,6 @@ div:nth-child(4) {
     padding: 0 0.5rem; }
     .gallery__video iframe {
       margin-top: 3rem;
-      background: orange;
       width: 100%;
       height: 20rem; }
       @media screen and (min-width: 576px) {
@@ -317,3 +315,22 @@ div:nth-child(4) {
   padding-top: 1.2rem;
   margin-top: 4rem;
   height: 4rem; }
+
+.top-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  transition: all 0.4s ease-in-out; }
+  .top-button:hover {
+    background: black;
+    color: #ffffff; }
+  @media screen and (max-width: 575.98px) {
+    .top-button {
+      display: none; } }
